@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jaggu Java develpoer portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://kit.fontawesome.com/1165876da6.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <style>
+      * {
+        padding: 0%;
+        margin: 0%;
+      }
+      html {
+  scroll-behavior: smooth;
+}
+
+
+      body {
+        /* background-color: #1f242d; */
+        background-color: #0f1827;
+
+        /* background-color: rgb(21, 15, 46); */
+        /* background-color: rgb(21, 15, 46); */
+        color: white;
+        font-family: "Poppins", sans-serif;
+      }
+    
+
+      nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 70px;
+        /* background-color: rgb(33, 33, 89); */
+        background-color: #0f1827;
+
+      
+      }
+      nav {
+  position: fixed;
+  /* nav-down: 100px; */
+  width: 100%;
+  z-index: 1000;
+}
+
+      nav ul {
+        display: flex;
+        justify-content: center;
+      }
+      nav ul li {
+        list-style: none;
+        margin:  29px;
+      }
+      nav ul li a{
+        text-decoration: none;
+        color: aliceblue;
+        transform: .5s;
+        
+      }
+      nav ul li:hover a,
+      nav ul li.Active a{
+      color: #7cf03d;
+    }
+
+      .left {
+        font-size: 2rem;
+        padding-right: 200px;
+      }
+      .Section {
+        display: flex;
+        justify-content: space-around;
+        font-size: 1rem;
+      }
+      .fistSection {
+        /* border: 1px solid rgb(76, 118, 89); */
+        height: 650px;
+        width: 100%;
+        /* padding:90px; */
+        justify-content: center;
+        /* align-items: center; */
+
+        display: flex;
+        /* flex-direction: row; */
+        /* justify-content: center; */
+        /* align-items: center; */
+        /* gap: 50%; */
+      }
+      .leftSection {
+        /* border: 1px solid rgb(17, 255, 0); */
+        height: 300px;
+        width: 50%;
+        font-size: 2rem;
+        /* /* display: flex; */
+        justify-content: center;
+        align-items: end;
+        padding-top:80px ;
+      }
+      /* .content h4{
+        padding-bottom:0%;
+      } */
+      .leftSection div{
+         display: flex;
+         justify-content: center;
+         align-items: start;
+         /* padding: 80px ; */
+         padding-top: 60PX;
+         display: flex;
+         /* justify-content:center; */
+         padding-right: 100PX;
+
+         
+      }
+      .leftSection .buttons{
+        /* border: 2px solid rgb(153, 51, 66); */
+        height: 10px;
+        width: 320px; 
+        padding-bottom: 180px;
+        justify-content: space-between;
+        padding-left: 130px;
+      
+      }
+      .leftSection  .btn{
+     background-color: #7cf03d;
+    /* color: rgb(24, 8, 8); */
+    border: 2px solid;
+    border-radius: 26px;
+     border-color: #69f44e;;
+    font-size: 1.2rem;
+    cursor: pointer;
+    padding: 12px;
+    box-shadow: 0 0 50px hsla(128, 19%, 62%, 0.868);
+
+    
+      }
+      .leftSection .btn a{
+        text-decoration: none;
+        color: rgb(9, 13, 16);
+      }
+      .rightSection {
+        /* border: 1px solid rgb(255, 230, 0); */
+        height: 500px;
+        width: 50%;
+      }
+      .rightSection img {
+        display: flex;
+        justify-content:last right ;
+        align-items: end;
+        width: 60%;
+        height: 90%;
+        padding: 100px;
+        padding-right: 80px;
+      }
+      .purple{
+        color: rgb(82, 255, 180);
+        -webkit-text-stroke: .7px rgb(34, 237, 34);
+        color:transparent;
+      }
+      #element{
+        color: rgb(34, 237, 51);
+        /* padding-bottom: 0%; */
+        /* -webkit-text-stroke: .7px green; */
+        
+      }
+      .p{
+        font-size: 1rem;
+        padding-left: 120px;
+        /* border: 2px solid rgb(88, 11, 12); */
+         height: 40px;
+        /* width: 80%; */
+  
+       
+      
+        
+      }
+      main hr{
+        border: 0;
+      background-color: rgb(112, 228, 89);
+      box-shadow: 10px;
+      
+      height: 1.2px;
+      margin: 40px;
+
+      }
+      /* .footer{
+        border: 2px solid rgb(21, 193, 116);
+        width: 100%;
+        height: 200px;
+      } */
+      /* .footer1 h1{
+        padding-right: 100px;
+  
+      } */
+       /* -----------------------------------second section skills-------------------------------------- */
+      .secondSection{
+        border: 10px salid rgb(153, 112, 51);
+        height: 600px;
+      }
+      .secondSection h1{
+        padding-top: 0px;
+        padding-left: 45%;
+        font-size: 2rem;
+      }
+      .skills_about p{
+        padding-left: 80px;
+      }
+      .skills_about h2{
+        padding-left: 600px;
+      }
+      .secondSection .skills_about{
+        /* border: 2px solid rgb(65, 164, 20); */
+        height: 200px;
+        width: 100%;
+       
+      }
+      .AllSKills{
+        /* border: 2px solid orange; */
+        height: 150px;
+        width: 100%;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        gap: 50px;
+        flex-wrap: wrap;
+
+      }
+      .skills_about .AllSKills .skl{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 200px;
+      }
+      secondSection .AllSKills .skl{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 200px;
+        padding: 20px 50px;
+      }
+      /* ---------------------sectionThree Project--------------------------- */
+   .ProjectsAdd{
+    /* border: 2px solid greenyellow; */
+    width: 100%;
+    height: 550px;
+   }
+   .ProjectsAdd h1{
+    padding-left: 45%;
+    font-size: 2rem;
+    color: rgb(243, 250, 250);
+
+   }
+   .Allprojects{
+    /* border:2px solid red ; */
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+    gap: 10px;
+    /* box-shadow: 0 0 10px hsla(0, 38%, 77%, 0.868); */
+    /* background-color: aliceblue; */
+    transition:0.5s ease-in-out;
+    transition: 0.5s;
+    
+
+   }
+   .addproject:hover{
+    /* transform: translatey(20px); */
+    transform: scale(1.1);
+    z-index: 1;
+   }
+   .addproject{
+    border:2px solid rgb(216, 210, 210) ;
+    width: 25%;
+    height: 440px;
+    background-color: aliceblue;
+    box-shadow: 0 0 50px hsla(0, 23%, 62%, 0.868);
+    background-color: aliceblue;
+    transition:0.5s ease-in-out;
+    border-radius: 2px;
+    
+   }
+   .addproject img{
+    width: 100%;
+    height: 50%;
+    box-shadow: 20px;
+    /* border:color(srgb red green blue); */
+    background-color: aliceblue;
+   }
+   .addproject h3{
+    color: black;
+   }
+   .addproject h4{
+    color: rgb(241, 52, 52);
+   }
+   .addproject p{
+    color: rgb(20, 12, 12);
+    font-size: small;
+   }
+
+
+
+
+ /* ---------------------sectionFour About--------------------------- */
+ .aboutbox{
+  /* border: 2px solid rgb(154, 35, 35); */
+  height: 550px;
+    width:98%;
+    justify-content: center;
+    display: flex;
+ }  
+ .About{
+    /* border: 2px solid rgb(154, 35, 35); */
+    height: 550px;
+    width:70%;
+    justify-content: center;
+    border-radius: 3px;
+    box-shadow: 0 0 20px hsla(127, 88%, 48%, 0.868);
+    background-color:#1a2231;
+    /* padding-left: 20%; */
+    /* transition:0.5s ease-in-out;  */
+    
+
+}
+.About:hover{
+      transition:0.5s ease-in-out;
+      transform: scale(1.1);
+      z-index: 1;
+    }   
+.About h1{
+    padding-left: 40%;
+    font-size: 3rem;
+    padding-bottom: 5%;
+    color: hsl(180, 83%, 95%);
+}
+#aboutphotoandintru{
+    /* border: 2px solid gray; */
+    height: 390px;
+    width:80%;
+    justify-content: space-evenly;
+    align-items: center;
+    display: flex;
+    padding-left: 8%;
+    color: #fcf3f3;
+
+}
+#img{
+    /* border: 2px solid rgb(56, 174, 9); */
+    height: 100%;
+    border-radius:2%;
+    width:35%;
+    display: flex;
+    justify-content: center;
+
+
+}
+#aboutphotoandintru img{
+    border-radius: 10px;
+    /* padding-bottom: 50%; */
+    /* box-shadow: 0 0 20px hsla(129, 36%, 78%, 0.868); */
+    box-shadow: 0 0 50px hsla(110, 23%, 62%, 0.868);
+    background-color: aliceblue;
+    transition:0.5s ease-in-out;
+    
+    /* border-radius: 2px; */
+}
+#aboutphotoandintru img:hover{
+    /* border: 2px solid #ded3bd; */
+    /* border-radius: 1px; */
+    transition:0.5s ease-in-out;
+    /* transform: translatey(20px); */
+        
+}
+.intru{
+    /* border: 2px solid rgb(194, 22, 22); */
+    height: 550px;
+    width:45%;
+    padding-top: 30%;
+    
+}
+
+
+/* ---------------------sectionFour Contact--------------------------- */
+.ConatctPage{
+          /* border: 1px solid red; */
+          height: 600px;
+        width: 60%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-left: 20px;
+}
+.form{
+        /* border: 1px solid red; */
+        height: 500px;
+        width: 200%;
+        /* display: flex; */
+        justify-content: center;
+        align-items: center; 
+        /* background-color: #fcf7fb; */
+    /* background-color: rgb(40, 36, 52);
+     */
+     background-color:  #1a2231;
+        box-shadow:0 0 20px hsla(127, 89%, 54%, 0.868);
+        border-radius: 3px;  
+      }
+      .form h1{
+        padding-left:50% ;
+        color: rgb(232, 250, 250);
+      }
+      .form:hover{
+      transition:0.5s ease-in-out;
+      transform: scale(1.1);
+      z-index: 1;
+    }   
+      /* .form{
+        padding-left: 50%;
+      } */
+    .input{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 1px;
+        padding-left: 30px;
+        
+    }
+     .conatct-input{
+        width: 500px;
+        height: 50px;
+        border: rgb(44, 215, 55);
+        padding-left:5px;
+        color:#ebf0f0;
+        font-weight: 500;
+        border-radius: 4px;
+        outline: none;
+        background-color:#131925;
+        /* color: black; */
+     }
+
+      
+     .button{
+        font-size: 1.2rem;
+        border-radius: 30px;
+        width: 150px;
+        height: 40px;
+        /* border: ; */
+        /* color: blue;
+         */
+         background-color: rgb(18, 240, 66);
+         color: rgb(9, 11, 12);
+         
+     }  
+     .input textarea
+     {
+        height: 150px;
+        /* background-color: black; */
+     }
+
+      /* ----------------------------FOOTER------------------------------------------------------- */
+      .footer{
+        /* border: 1px solid brown; */
+        width: 100%;
+        height:175px ;
+        justify-content: space-evenly;
+        display: flex;
+        align-items: center;
+        background-color: rgb(41, 55, 94);
+        /* background-color: rgb(31, 40, 65); */
+
+        color: rgb(231, 244, 248);
+      }
+      .footer ul li{
+        list-style: none;
+        text-align: center;
+      }
+      .footertext{
+        /* font-style: italic; */
+        font-size: 1rem;
+        justify-content: center;
+        display: flex;
+        background-color: rgb(40, 47, 66);
+      }
+      .footer3 a{
+        text-decoration: none;
+        color: aliceblue;
+        /* border: 2px solid green; */
+      }
+      .footer4 a{
+        text-decoration: none;
+        color: aliceblue;
+        border: 2px solid rgb(45, 214, 45);
+        border-radius: 50%;
+        padding: 5px;
+        font-size: 15px;
+        color: #7cf03d;
+      }
+      /* .footer h1{
+        border: 2px solid rgb(51, 153, 71);
+        width: 150%;
+        height: 40px;
+        /* display: flex; */
+        /* display: table-cell; */
+      /* } */ 
+      .social-icons li{
+        display: inline-block;
+        text-align: center;
+        padding: 5px;
+      }
+      .social-icons li a:hover{
+        color: #7cf03d;
+      }  
+      .footer3 li a:hover{
+        color: #7cf03d;
+      }  
+      .footer2 p:hover{
+        color:#7cf03d;
+        
+      } 
+      .footer4 li a:hover{
+        color: #7cf03d;
+        background-color: #141e0f;
+      }  
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="left">Jaggu Portifolio</div>
+        <div class="right">
+          <ul lass="nav-links"> 
+            <li class="Active"><a href="#home"> Home </a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section id="home" class="">
+      <section class="fistSection">
+        <div class="leftSection">
+           <div class="content">
+            <h4> Hi,<br>i'm  <span class="purple">Jagappa</span><br>
+            and I am a passionate <br>
+            
+            <span id="element"></span></h4><br>
+            
+           </div>
+           <div class="p">
+           <p>"Fresh Java Full Stack Developer skilled in Java, Spring, React, HTML, CSS, and JavaScript. Passionate about building modern web applications and eager to grow in the tech industry."</p>
+            <!-- <p>"As a passionate and motivated Java Full Stack Developer, I am eager to apply my skills in both front-end and back-end technologies. Proficient in Java, Spring, HTML, CSS, JavaScript, and React, I am focused on building modern, responsive web applications. With a strong foundation in software development and problem-solving, I am excited to contribute to innovative projects and continuously grow my expertise in the tech industry."</p> -->
+           </div>
+           <div class="buttons">
+            <button class="btn"><a href="https://www.instagram.com/jaggu_s_m07?igsh=a2UyZXB0ejR3eWpx">Visit Github</button></a>
+            <button class="btn"><a href="resumne.pdf">Download Resume </button></a>
+           
+          </div>
+          
+        </div>
+        <div class="rightSection">
+          <img src="Home_img/bd.webp" alt="" />
+        </div>
+      </section>
+    </section>
+      <hr>
+       <!-- ---------------------sectionSECOND  SKILLS---------------------------  -->
+      <section id="skills"  class="secondSection">
+        <h1>Skills</h1>
+        <div class="skills_about">
+          
+            
+           <h2>**🚀 About My Skills**</h2><br>  
+           <p>"I'm a full-stack developer** with expertise in HTML, CSS, JavaScript, Java, and React. I specialize in building responsive, scalable, and user-friendly web applications.<br>
+            
+            **💡Front-end:** I create sleek, interactive, and intuitive UI/UX designs using modern web technologies.<br> 
+             **⚙️Back-end:** Proficient in Java, I develop efficient and secure server-side logic.<br>  
+             **🔧Tools & Frameworks:** Experienced with React for dynamic web applications and optimizing performance.  
+            
+            I love solving problems and continuously learning new technologies to enhance my development skills!"  
+            
+            
+            
+             😊</p>
+        </div>
+        <div class="AllSKills">
+          <div class="skl">
+            <img src="skills_images/html-logo.webp" alt=" html-logo"> 
+            <span>HTML</span>
+            
+          </div>
+          <div class="skl">
+            <img src="skills_images/css-logo.webp" alt="css logo">
+            <span>CSS</span>
+          </div>
+          <div class="skl">
+            <img src="skills_images/javascript-logo.webp" alt="javascript-logo">
+            <!-- <i class="fa-brands fa-css"></i> -->
+            <span>JAVASCRIPT</span>
+          </div>
+          <div class="skl">
+            <img src="skills_images/react-logo.webp" alt="Reactjs logo">
+            <span>Reactjs</span>
+          </div>
+          <div class="skl">
+            <img src="skills_images/node-logo.webp" alt="Nodejs logo">
+            <span>Nodejs</span>
+          </div>
+        </div>     
+      </section>
+      <hr>
+
+
+      <!-- -----------------------Section03Project--------------------------- -->
+<section id="projects" class="ProjectsAdd">
+  <h1>Projects</h1>
+  <div class="Allprojects">
+    <div class="addproject">
+      <img src="Pro_images/project01.png" alt="">
+      <h4>Project Title</h4>
+      <h3>Fire Fencing management system</h3>
+      <p>The main objective of this project is to provide all the information about the stock details and management of "Fencing Wires" in a website. In this we keep track of all stocks, sales and purchase.
+
+        To reach as many as people and with the knowledge of this software we can make it more profitable.</p>
+      </div>
+
+    
+    <div class="addproject">
+      <img src="Pro_images//project02.png" alt="">
+      <h4>Project Title</h4>
+      <h3> Job Portfolio</h3>
+      <p>An object of a portfolio refers to a data structure that holds various pieces of information about a person, project, or collection of works. The "portfolio" object is typically used to represent a collection of assets or a showcase, often in a personal, professional, or creative context. This object can be used to store details about someone's skills, achievements, work samples, projects, certifications, and other relevant data.
+
+        </p>
+    </div>
+    <div class="addproject">
+      <img src="Pro_images/project03.png" alt="">
+      <h4>Project Title</h4>
+      <h3> Test Yantra Website(React Front-end)</h3>
+      <p>Built the front-end of a professional IT consulting website similar to Test Yantra, using React to practice and enhance my React.js skills. This project involved creating a dynamic and responsive user interface that mirrors the structure of a corporate website.</p>
+    </div>
+
+  </div>
+</section>
+<hr>
+
+
+ <!-- ---------------------sectionFour About---------------------------  -->
+<section class="aboutbox">
+<section id="about" class="About">
+  <h1>About</h1>
+  <div id="aboutphotoandintru">
+      <div id="img">
+          <img src="About_img/photo.jpg" alt="" style="height: 100%;">
+
+      </div>
+      <div class="intru">
+          <h2>I am Jagappa</h2>
+          <br>
+          <h5>Hi, I'm Jagappa, a passionate and dedicated student currently pursuing my Master's in Computer Applications (MCA) with a specialization in Artificial Intelligence (AI) and Machine Learning (ML). My academic journey has equipped me with a strong foundation in programming, problem-solving, and data-driven decision-making.
+
+              I have developed a keen interest in Java development and am actively seeking opportunities to apply my skills in real-world projects. With a solid understanding of Java programming, algorithms, and object-oriented design principles, I am eager to contribute to dynamic development teams and work on innovative solutions.
+              
+              </h5>
+
+      </div>
+  </div>
+
+</section>
+</section>
+<hr>
+
+<!-- ---------------------section05 Contact---------------------------  -->
+<section id="contact" class="ConatctPage">
+  <div class="contact">
+   <form action="https://api.web3forms.com/submit" method="POST" class="form">
+     <h1>Contact <span style="color: rgb(26, 238, 26);">Me!</span></h1><br>
+     <div class="input">
+      <input type="hidden" name="access_key" value="bf65766a-d7b2-4b53-b446-ceb7f5c202c7">
+     <input type="text" name="name" placeholder="Your name"  class="conatct-input" required><br>
+     <input type="EMail" name="EMail" placeholder="Your EMail"   class="conatct-input" required><br>
+     <textarea name="Message" placeholder="Your Message"   class="conatct-input" required></textarea><br>
+     <button type="submit" class="button" >Send Message</button>
+  </div>
+   </form>
+  </div>
+</section>
+
+    </main>
+    
+    
+    <!-- -- -----------------------Section 06Footer--------------------------- -- -->
+    <footer>
+      <div class="footer">
+               <div class="footer1">
+                <h1>Jaggu developer<br>
+                  Portifolio</h1><br>
+                  <h3>-</h3>
+
+               </div>
+               <div class="footer2">
+                <h1>Contact Us</h1>
+                
+                 
+                  <p>EMAIL:jagappamerigi@gmail.com</p>
+                  <p>Phone NO: 7619293345</p>
+                  <p>Address:Vijayanar,bangalore<br>560040</p>
+                  <!-- <li>Contact</li> -->
+              
+               </div>
+               <div class="footer3">
+                <h1>Quick Linkks</h1>
+                <ul>
+                  <li><a href="#home"> Home </a></li>
+                  <li><a href="#about">About</a></li>
+                  <li><a href="#skills">Skills</a></li>
+                  <li><a href="#projects">Projects</a></li>
+                  <!-- <li><a href="#contact">Contact</a></li> -->
+                </ul>
+               </div>
+               <div class="footer4">
+                <h1>Follow Us</h1>
+                <ul class="social-icons">
+                 <li><a href=""><i class="fab fa-facebook"></i></a></li>
+                 <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                 <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                 <li><a href=""><i class="fab fa-linkedin"></i></a></li>
+                </ul>
+                <h1>(❤️ ω ❤️)</h1>
+               
+                
+               </div>
+      </div>
+      <div class="footertext">
+        Copyright ©2025 Portfolio. All rights reserved🍁
+      </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+          strings: ['Java Full Stack developer', '&amp; Web Desinger'],
+          typeSpeed: 50,
+        });
+      </script>
+  </body>
+  
+</html>
